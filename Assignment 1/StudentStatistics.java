@@ -31,7 +31,7 @@ public class StudentStatistics{
                 
                 //Read and validate the input mark
                 while (!scanner.hasNextInt()){
-                    System.out.println("Invalid input. Please enetr a number.");
+                    System.out.println("Invalid input. Please enter a number.");
                     scanner.next();//Consume the invalid input
                 }
                 mark = scanner.nextInt();
