@@ -40,10 +40,12 @@ public class StudentStatistics{
             //Add the valid mark to the list of marks.
             studentMarks.add(mark);
         }
-        //Display the assignment name.
+        //Display the assignment name & Students' Mark 
         System.out.println("Assignment Name: " + assignmentName);
-        
-        //close the scanner.
+        System.out.println("Students' Marks");
+        for(int i=0; i<studentMarks.size(); i++){
+            System.out.println("Student "+ (i+1)+": "+ studentMarks.get(i));
+        }        //close the scanner.
         scanner.close();
     
     }
