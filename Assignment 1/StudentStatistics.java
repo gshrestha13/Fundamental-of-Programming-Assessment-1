@@ -46,11 +46,23 @@ public class StudentStatistics{
         for(int i=0; i<studentMarks.size(); i++){
             System.out.println("Student "+ (i+1)+": "+ studentMarks.get(i));
         }
-        
         //Functional Requirement 5 : Print Highest and Lowest Marks
         //Initialize variables highest_mark and lowest_mark to 0.
         int highestMark = studentMarks.get(0);
         int lowestMark = studentMarks.get(0);
+        for(int mark : studentMarks){
+            //If the current mark is greater than highest_mark, update the highest_mark with the current mark.
+            if(mark > highestMark){
+                highestMark = mark;
+            }
+            //If the current mark is greater than highest_mark, update the highest_mark with the current mark.
+            if(mark < lowestMark){
+                lowestMark = mark;
+            }
+        }
+        //Print the highest and lowest mark on the screen.
+        System.out.println("The Highest mark is: "+ highestMark);
+        System.out.println("The Lowest Mark is: "+ lowestMark);
         //close the scanner.
         scanner.close();
     
