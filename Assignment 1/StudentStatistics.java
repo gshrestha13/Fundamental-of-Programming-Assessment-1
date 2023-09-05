@@ -40,12 +40,18 @@ public class StudentStatistics{
             //Add the valid mark to the list of marks.
             studentMarks.add(mark);
         }
-        //Display the assignment name & Students' Mark 
+        //Functional Requirement 4, Display the assignment name & Students' Mark 
         System.out.println("Assignment Name: " + assignmentName);
         System.out.println("Students' Marks");
         for(int i=0; i<studentMarks.size(); i++){
             System.out.println("Student "+ (i+1)+": "+ studentMarks.get(i));
-        }        //close the scanner.
+        }
+        
+        //Functional Requirement 5 : Print Highest and Lowest Marks
+        //Initialize variables highest_mark and lowest_mark to 0.
+        int highestMark = studentMarks.get(0);
+        int lowestMark = studentMarks.get(0);
+        //close the scanner.
         scanner.close();
     
     }
