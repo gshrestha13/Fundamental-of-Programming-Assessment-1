@@ -63,6 +63,10 @@ public class StudentStatistics{
         //Print the highest and lowest mark on the screen.
         System.out.println("The Highest mark is: "+ highestMark);
         System.out.println("The Lowest Mark is: "+ lowestMark);
+        
+        //Functional Requirement 6 : Calculate Mean and Standard Deviation
+        int sumOfmarks= 0;
+        int squaredSumOfMarks = 0;
         //close the scanner.
         scanner.close();
     
