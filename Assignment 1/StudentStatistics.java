@@ -65,8 +65,25 @@ public class StudentStatistics{
         System.out.println("The Lowest Mark is: "+ lowestMark);
         
         //Functional Requirement 6 : Calculate Mean and Standard Deviation
-        int sumOfmarks= 0;
+        //Initialize variables sum_of_marks, squared_sum_of_marks, and count to 0.
+        int sumOfMarks= 0;
         int squaredSumOfMarks = 0;
+        for (int mark : studentMarks){
+            int squaredMark = mark * mark;
+            //Increment count by 1 and add the current mark to sum_of_marks
+            sumOfMarks += mark;
+            //add the square of the current mark to squared_sum_of_marks
+            squaredSumOfMarks += squaredMark;
+        }
+        //Calculate the Mean as sum_of_marks divided by count.
+        double mean = (double)sumOfMarks/studentMarks.size();
+        //Calculate Variance
+        double variance = (double) squaredSumOfMarks/studentMarks.size()-(mean*mean);
+        //Calculate Standard Deviation
+        double standardDeviation = Math.sqrt(variance);
+        //Print Mean and Standard Deviation on the screen.
+        System.out.println("Mean: "+ mean);
+        System.out.println("Standard Deviation: "+ standardDeviation);
         //close the scanner.
         scanner.close();
     
