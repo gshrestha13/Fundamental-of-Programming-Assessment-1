@@ -35,6 +35,10 @@ public class StudentStatistics{
                     scanner.next();//Consume the invalid input
                 }
                 mark = scanner.nextInt();
+                
+                if (mark<0||mark>30){
+                    System.out.println("Invalid Input. Mark must be between 0 and 30.");
+                }
                 //Check if the input is a valid number between 0 and 30. 
             }while (mark<0 || mark>30);
             //Add the valid mark to the list of marks.
