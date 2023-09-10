@@ -1,6 +1,7 @@
 
 /**
- * Write a description of class StudentStatistics here.
+ * Below written code is a simple program that displays assignment name (what user inputs), shows error when user enters invalid input,prints highest
+ * and lowest marks based on the values provided and also calulates mean and standard deviation.
  *
  * @author (Gagan Shrestha)
  * @student id number (24253736)
